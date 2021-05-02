@@ -42,12 +42,11 @@ export class SspButton {
 
   private getIconSource(): string {
     return {
-      stencil: 'assets/img/logo.png'
+      stencil: '/assets/img/logo.png'
     }[this.icon];
   }
 
   emitEvent(): void {
-    console.log('ok');
     this.buttonEvent.emit(true);
   }
 
